@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .progress-bar {
+        background-color: #0d6efd !important;
+      }
+      .certificates img {
+        width: 100%;
+        border-radius: 5px;
+      }
+      .course-card {
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+        padding: 15px;
+        margin-bottom: 20px;
+      }
+      .course-title {
+        font-size: 1.1rem;
+        font-weight: bold;
+      }
+      .progress-text {
+        font-size: 0.9rem;
+      }
+      .section-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+    <div class="container py-4">
+      <div class="row mb-4">
+        <div class="col-12 text-center">
+          <h1>Welcome to Your Dashboard</h1>
+          <p class="text-muted">
+            Track your progress, view your achievements, and explore new
+            courses.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Enrolled Courses Section -->
+        <div class="col-lg-6">
+          <h2 class="section-title">Enrolled Courses</h2>
+          <!-- Course 1 -->
+          <div class="course-card">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="course-title">Introduction to Python</div>
+              <span class="badge bg-primary">In Progress</span>
+            </div>
+            <div class="progress mb-2">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 75%"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <div class="progress-text">75% completed</div>
+          </div>
+          <!-- Course 2 -->
+          <div class="course-card">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="course-title">Web Development Bootcamp</div>
+              <span class="badge bg-success">Completed</span>
+            </div>
+            <div class="progress mb-2">
+              <div
+                class="progress-bar bg-success"
+                role="progressbar"
+                style="width: 100%"
+                aria-valuenow="100"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <div class="progress-text">100% completed</div>
+          </div>
+        </div>
+        <!-- Certificates Section -->
+        <div class="col-lg-6">
+          <h2 class="section-title">Certificates Earned</h2>
+          <div class="row certificates">
+            <div class="col-6 mb-3">
+              <img
+                src="https://via.placeholder.com/300x200"
+                alt="Certificate"
+                class="img-thumbnail"
+              />
+              <p class="text-center mt-2">Python Basics</p>
+            </div>
+            <div class="col-6 mb-3">
+              <img
+                src="https://via.placeholder.com/300x200"
+                alt="Certificate"
+                class="img-thumbnail"
+              />
+              <p class="text-center mt-2">Web Development</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Upcoming Courses Section -->
+      <div class="row mt-4">
+        <div class="col-12">
+          <h2 class="section-title">Upcoming or Recommended Courses</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Advanced JavaScript</h5>
+                  <p class="card-text">
+                    Master advanced JavaScript concepts and frameworks.
+                  </p>
+                  <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Data Structures</h5>
+                  <p class="card-text">
+                    Learn efficient algorithms and data structure techniques.
+                  </p>
+                  <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Machine Learning Basics</h5>
+                  <p class="card-text">
+                    An introduction to machine learning concepts and tools.
+                  </p>
+                  <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-3 col-lg-2 bg-white border-end vh-100 p-3">
+          <div class="d-flex align-items-center mb-4">
+            <div class="me-3">
+              <img
+                src="https://via.placeholder.com/50"
+                alt="Profile Picture"
+                class="rounded-circle"
+              />
+            </div>
+            <div>
+              <h5 class="mb-0">Sarah Connor</h5>
+              <small>sarahc@gmail.com</small>
+            </div>
+          </div>
+          <nav class="nav flex-column">
+            <a href="#" class="nav-link text-dark">Dashboard</a>
+            <a href="#" class="nav-link text-dark">Analytics</a>
+            <a href="#" class="nav-link text-dark">Task List</a>
+            <a href="#" class="nav-link text-dark">Tracking</a>
+            <a href="#" class="nav-link text-dark">Setting</a>
+          </nav>
+        </div>
+        <!-- Main Content -->
+        <div class="col-md-9 col-lg-10">
+          <div class="d-flex justify-content-between align-items-center py-4">
+            <h2>Hello, Sarah</h2>
+            <button class="btn btn-primary">Add New Project</button>
+          </div>
+          <div class="row">
+            <!-- Project Cards -->
+            <div class="col-md-4 mb-4">
+              <div class="card shadow-sm border-0">
+                <div class="card-body">
+                  <h6>Web Development</h6>
+                  <p class="mb-2">10 tasks • 96%</p>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 96%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card shadow-sm border-0">
+                <div class="card-body">
+                  <h6>Mobile App Design</h6>
+                  <p class="mb-2">12 tasks • 46%</p>
+                  <div class="progress">
+                    <div class="progress-bar bg-info" style="width: 46%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card shadow-sm border-0">
+                <div class="card-body">
+                  <h6>Facebook Brand UI Kit</h6>
+                  <p class="mb-2">22 tasks • 73%</p>
+                  <div class="progress">
+                    <div
+                      class="progress-bar bg-warning"
+                      style="width: 73%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8">
+              <h5>Tasks for Today</h5>
+              <ul class="list-group">
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  Mobile App
+                  <span>Prepare Figma file</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  UX Wireframes
+                  <span>Design UX wireframes</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  Mobile App
+                  <span>Research</span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h5>Statistics</h5>
+              <div class="mb-3">Tracked time: 28h</div>
+              <div class="mb-3">Finished tasks: 18</div>
+              <button class="btn btn-outline-primary w-100">
+                Upgrade to Pro
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

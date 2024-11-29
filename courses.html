@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Ed</title>
+
+    <!-- External js -->
+    <link rel="stylesheet" href="JS/main.js" />
+
+    <!-- External Css -->
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <!-- Bootsrap CSS -->
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Bootsrap css -end -->
+
+    <!-- exeternal css -->
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <!-- Google Font - web -->
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon font @vishal Singh -->
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+
+    <link rel="icon" type="image/svg+xml" href="Img/nav icon/apple.png" />
+
+    <!-- Font awasome -->
+    <link rel="stylesheet" href="assests/Font-awesome/all.min.css" />
+  </head>
+
+  <body class="bg-body-secondary">
+    <!-- navbar-start  (@Amrisha)-->
+
+    <nav class="navbar navbar-expand-lg bg-body-secondary fixed-top shadow p-3 mb-5 bg-body-tertiary rounded" >
+      <div class="container-fluid">
+        
+
+        <!--  Logo @Vishal singh -->
+
+        <a
+          class="navbar-brand d-flex align-items-center px-5 px-lg-5"
+          href="index.html"
+        >
+          <img src="Img/nav icon/Educational Logo.png" alt="Logo" />
+          <p class="m-0 fw-bold" style="font-size: 35px">
+            Smart<span style="color: #fb873f">Ed</span>
+          </p></a
+        >
+
+        <!-- Navbar toggler for mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar content -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <!-- Navigation links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active me-3" aria-current="page" href="index.html"
+                ><img src="Img/nav icon/home.png" alt="Logo" />
+
+                Home</a
+              >
+            </li>
+            
+            <li class="nav-item me-3">
+              <a class="nav-link" href="contact_us.html"
+                ><img src="Img/nav icon/About Us.png" alt="Logo" />Contact Us</a
+              >
+            </li>
+            
+            <!-- Dropdown -->
+            <li class="nav-item dropdown me-3">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="Img/nav icon/Courses.png" alt="Logo" />Courses
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Web Development</a></li>
+                <li><a class="dropdown-item" href="#">Data Science</a></li>
+                <li><a class="dropdown-item" href="design.html">Jee</a></li>
+              </ul>
+            </li>
+              <li class="nav-item dropdown me-3">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="Img/nav icon/Courses.png" alt="Logo" />About Us
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Developor Profile</a></li>
+                <li><a class="dropdown-item" href="#">Comapny</a></li>
+                <li><a class="dropdown-item" href="#">Jee</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Login button -->
+            <button  formtarget="_blank"
+                  class="btn btn-primary ms-3 me-3" 
+                     type="button" 
+                          onclick="redirectToLogin()">
+                        Login/SignUp
+          </button>
+
+          <!-- Search bar -->
+          <form class="d-flex ms-3" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-white" id="search" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+  
+
+  
+    <div class="container py-5">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Popular Courses</h2>
+      </div>
+
+      <div class="row g-4">
+        <!-- Column 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div id="cardd1" class="card h-100 text-center">
+            <a href="/" class="text-decoration-none text-dark">
+              <img
+                src="Img/JEE Prepration.png"
+                class="card-img-top p-3"
+                alt="JEE Preparation"
+              />
+              <div class="card-body">
+                <h5 class="card-title">JEE Preparation</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div id="cardd2" class="card h-100 text-center">
+            <a href="/" class="text-decoration-none text-dark">
+              <img
+                src="Img/GATE PREP.png"
+                class="card-img-top p-3"
+                alt="GATE Preparation"
+              />
+              <div class="card-body">
+                <h5 class="card-title">GATE Preparation</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div id="cardd3" class="card h-100 text-center">
+            <a href="/" class="text-decoration-none text-dark">
+              <img
+                src="Img/SAMPLE PAPER.png"
+                class="card-img-top p-3"
+                alt="Sample Papers"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Sample Papers</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div id="cardd4" class="card h-100 text-center">
+            <a href="/" class="text-decoration-none text-dark">
+              <img
+                src="Img/DAILY QUIZ.png"
+                class="card-img-top p-3"
+                alt="Daily Quiz"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Daily Quiz</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div id="cardd5" class="card h-100 text-center">
+            <a href="/" class="text-decoration-none text-dark">
+              <img
+                src="Img/COMPUTER COURSE.png"
+                class="card-img-top p-3"
+                alt="Computer Courses"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Computer Courses</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div id="cardd6" class="card h-100 text-center">
+            <a href="/" class="text-decoration-none text-dark">
+              <img
+                src="Img/Data Structure.png"
+                class="card-img-top p-3"
+                alt="Data Structures"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Data Structures</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div id="cardd7" class="card h-100 text-center">
+            <a href="/" class="text-decoration-none text-dark">
+              <img
+                src="Img/ALGORITHM.png"
+                class="card-img-top p-3"
+                alt="Algorithm"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Algorithm</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div id="cardd8" class="card h-100 text-center">
+            <a href="/" class="text-decoration-none text-dark">
+              <img
+                src="Img/projects.png"
+                class="card-img-top p-3"
+                alt="Projects"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Projects</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div id="cardd9" class="card h-100 text-center">
+            <a href="/" class="text-decoration-none text-dark">
+              <img
+                src="Img/assignments.png"
+                class="card-img-top p-3"
+                alt="Projects"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Assignments</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- hero section end -->
+
+    <!-- Courses Start @vishal singh -->
+
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+          <h6 class="section-title bg-white text-center px-3">New Arrivals</h6>
+          <h1 class="mb-5" style="color: #fb873f">
+            Explore new and trending free online courses
+          </h1>
+        </div>
+        <div class="row g-4 py-2">
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="course-item shadow">
+              <div class="position-relative overflow-hidden text-light image">
+                <img class="img-fluid" src="img/course-1.jpg" alt="" />
+                <div
+                  style="
+                    position: absolute;
+                    top: 15px;
+                    left: 16px;
+                    font-size: 12px;
+                    border-radius: 3px;
+                    background-color: #fb873f;
+                  "
+                  class="px-2 py-1 fw-bold text-uppercase"
+                >
+                  FREE
+                </div>
+              </div>
+              <div class="p-2 pb-0">
+                <h5 class="mb-1">
+                  <a href="#" class="text-dark"
+                    >HTML Course for Beginners
+                  </a>
+                </h5>
+              </div>
+              <div class="d-flex">
+                <small class="flex-fill text-center py-1 px-2"
+                  > Rating: ★★★★☆ (4.3)</small
+                >
+                <small class="flex-fill text-center py-1 px-2"
+                  >5.8L+ Learners
+                </small>
+                <small class="flex-fill text-center py-1 px-2"
+                  >Beginner</small
+                >
+              </div>
+              <div class="d-flex">
+                <small class="flex-fill text-left p-2 px-2"
+                  >2.0 Hrs</small
+                >
+                <small class="py-1 px-2 fw-bold fs-6 text-center">₹ 0</small>
+                <small
+                  class="text-primary py-1 px-2 fw-bold fs-6"
+                  style="float: right"
+                  ><a href="#">Enroll Now </a
+                  ></small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="course-item shadow">
+              <div class="position-relative overflow-hidden text-light image">
+                <img class="img-fluid" src="img/course-2.jpg" alt="" />
+                <div
+                  style="
+                    position: absolute;
+                    top: 15px;
+                    left: 16px;
+                    font-size: 12px;
+                    border-radius: 3px;
+                    background-color: #0ed44c;
+                  "
+                  class="px-2 py-1 fw-bold text-uppercase"
+                >
+                  PAID
+                </div>
+              </div>
+              <div class="p-2 pb-0">
+                <h5 class="mb-1">Front End Development-CSS</h5>
+              </div>
+              <div class="d-flex">
+                <small class="flex-fill text-center py-1 px-2"
+                  > 4.55</small
+                >
+                <small class="flex-fill text-center py-1 px-2"
+                  >5.2L+ Learners
+                </small>
+                <small class="flex-fill text-center py-1 px-2"
+                  >Beginner</small
+                >
+              </div>
+              <div class="d-flex">
+                <small class="flex-fill text-left p-2 px-2"
+                  >4.0 Hrs</small
+                >
+                <small class="py-1 px-2 fw-bold fs-6 text-center">₹ 199</small>
+                <small
+                  class="text-primary py-1 px-2 fw-bold fs-6"
+                  style="float: right"
+                  ><a href="#">Enroll Now </a
+                  ></small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="course-item shadow">
+              <div class="position-relative overflow-hidden text-light image">
+                <img class="img-fluid" src="img/course-3.jpg" alt="" />
+                <div
+                  style="
+                    position: absolute;
+                    top: 15px;
+                    left: 16px;
+                    font-size: 12px;
+                    border-radius: 3px;
+                    background-color: #fb873f;
+                  "
+                  class="px-2 py-1 fw-bold text-uppercase"
+                >
+                  FREE
+                </div>
+              </div>
+              <div class="p-2 pb-0">
+                <h5 class="mb-1">Introduction to JavaScript</h5>
+              </div>
+              <div class="d-flex">
+                <small class="flex-fill text-center py-1 px-2"
+                  ><i class="fa fa-star text-warning me-2"></i> 4.46</small
+                >
+                <small class="flex-fill text-center py-1 px-2"
+                  >76L+ Learners
+                </small>
+                <small class="flex-fill text-center py-1 px-2"
+                  >Beginner</small
+                >
+              </div>
+              <div class="d-flex">
+                <small class="flex-fill text-left p-2 px-2"
+                  >2.5 Hrs</small
+                >
+                <small class="py-1 px-2 fw-bold fs-6 text-center">₹ 0</small>
+                <small
+                  class="text-primary py-1 px-2 fw-bold fs-6"
+                  style="float: right"
+                  ><a href="#">Enroll Now </a
+                  ></small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="course-item shadow">
+              <div class="position-relative overflow-hidden text-light image">
+                <img class="img-fluid" src="img/course-4.jpg" alt="" />
+                <div
+                  style="
+                    position: absolute;
+                    top: 15px;
+                    left: 16px;
+                    font-size: 12px;
+                    border-radius: 3px;
+                    background-color: #0ed44c;
+                  "
+                  class="px-2 py-1 fw-bold text-uppercase"
+                >
+                  PAID
+                </div>
+              </div>
+              <div class="p-2 pb-0">
+                <h5 class="mb-1">Python Programming</h5>
+              </div>
+              <div class="d-flex">
+                <small class="flex-fill text-center py-1 px-2"
+                  >3.54</small
+                >
+                <small class="flex-fill text-center py-1 px-2"
+                  >3.3L+ Learners
+                </small>
+                <small class="flex-fill text-center py-1 px-2"
+                  >Beginner</small
+                >
+              </div>
+              <div class="d-flex">
+                <small class="flex-fill text-left p-2 px-2"
+                  >3.0 Hrs</small
+                >
+                <small class="py-1 px-2 fw-bold fs-6 text-center">₹ 599</small>
+                <small
+                  class="text-primary py-1 px-2 fw-bold fs-6"
+                  style="float: right"
+                  ><a href="#">Enroll Now </a
+                  ></small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="course-item shadow">
+              <div class="position-relative overflow-hidden text-light image">
+                <img class="img-fluid" src="img/course-5.jpg" alt="" />
+                <div
+                  style="
+                    position: absolute;
+                    top: 15px;
+                    left: 16px;
+                    font-size: 12px;
+                    border-radius: 3px;
+                    background-color: #fb873f;
+                  "
+                  class="px-2 py-1 fw-bold text-uppercase"
+                >
+                  FREE
+                </div>
+              </div>
+              <div class="p-2 pb-0">
+                <h5 class="mb-1">SQL for Data Science</h5>
+              </div>
+              <div class="d-flex">
+                <small class="flex-fill text-center py-1 px-1"
+                  > 4.54</small
+                >
+                <small class="flex-fill text-center py-1 px-1"
+                  ><i class="fa fa-user-graduate me-2"></i>1.3L+ Learners
+                </small>
+                <small class="flex-fill text-center py-1 px-1"
+                  >Intermediate</small
+                >
+              </div>
+              <div class="d-flex">
+                <small class="flex-fill text-left p-2 px-2"
+                  >5.0 Hrs</small
+                >
+                <small class="py-1 px-2 fw-bold fs-6 text-center">₹ 0</small>
+                <small
+                  class="text-primary py-1 px-2 fw-bold fs-6"
+                  style="float: right"
+                  ><a href="#">Enroll Now </a
+                  ></small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="course-item shadow">
+              <div class="position-relative overflow-hidden text-light image">
+                <img class="img-fluid" src="img/course-6.jpg" alt="" />
+                <div
+                  style="
+                    position: absolute;
+                    top: 15px;
+                    left: 16px;
+                    font-size: 12px;
+                    border-radius: 3px;
+                    background-color: #fb873f;
+                  "
+                  class="px-2 py-1 fw-bold text-uppercase"
+                >
+                  FREE
+                </div>
+              </div>
+              <div class="p-2 pb-0">
+                <h5 class="mb-1">ChatGPT for Beginners</h5>
+              </div>
+              <div class="d-flex">
+                <small class="flex-fill text-center py-1 px-2"
+                  >3.55</small
+                >
+                <small class="flex-fill text-center py-1 px-2"
+                  >3.5L+ Learners
+                </small>
+                <small class="flex-fill text-center py-1 px-2"
+                  >Beginner</small
+                >
+              </div>
+              <div class="d-flex">
+                <small class="flex-fill text-left p-2 px-2"
+                  >4.5 Hrs</small
+                >
+                <small class="py-1 px-2 fw-bold fs-6 text-center">₹ 0</small>
+                <small
+                  class="text-primary py-1 px-2 fw-bold fs-6"
+                  style="float: right"
+                  ><a href="#">Enroll Now </a
+                  ></small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="course-item shadow">
+              <div class="position-relative overflow-hidden text-light image">
+                <img class="img-fluid" src="img/course-7.jpg" alt="" />
+                <div
+                  style="
+                    position: absolute;
+                    top: 15px;
+                    left: 16px;
+                    font-size: 12px;
+                    border-radius: 3px;
+                    background-color: #fb873f;
+                  "
+                  class="px-2 py-1 fw-bold text-uppercase"
+                >
+                  FREE
+                </div>
+              </div>
+              <div class="p-2 pb-0">
+                <h5 class="mb-1">AWS for Beginners</h5>
+              </div>
+              <div class="d-flex">
+                <small class="flex-fill text-center py-1 px-2"
+                  > 4.53</small
+                >
+                <small class="flex-fill text-center py-1 px-2"
+                  >1L+ Learners
+                </small>
+                <small class="flex-fill text-center py-1 px-2"
+                  >Beginner</small
+                >
+              </div>
+              <div class="d-flex">
+                <small class="flex-fill text-left p-2 px-2"
+                  >3.0 Hrs</small
+                >
+                <small class="py-1 px-2 fw-bold fs-6 text-center">₹ 0</small>
+                <small
+                  class="text-primary py-1 px-2 fw-bold fs-6"
+                  style="float: right"
+                  ><a href="#">Enroll Now </a
+                  ></small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="course-item shadow">
+              <div class="position-relative overflow-hidden text-light image">
+                <img class="img-fluid" src="img/course-8.jpg" alt="" />
+                <div
+                  style="
+                    position: absolute;
+                    top: 15px;
+                    left: 16px;
+                    font-size: 12px;
+                    border-radius: 3px;
+                    background-color: #0ed44c;
+                  "
+                  class="px-2 py-1 fw-bold text-uppercase"
+                >
+                  PAID
+                </div>
+              </div>
+              <div class="p-2 pb-0">
+                <h5 class="mb-1">Microsoft Azure Essentials</h5>
+              </div>
+              <div class="d-flex">
+                <small class="flex-fill text-center py-1 px-1"
+                  > 4.64</small
+                >
+                <small class="flex-fill text-center py-1 px-1"
+                  >4.4L+ Learners
+                </small>
+                <small class="flex-fill text-center py-1 px-1"
+                  >Intermediate</small
+                >
+              </div>
+              <div class="d-flex">
+                <small class="flex-fill text-left p-2 px-2"
+                  >3.5 Hrs</small
+                >
+                <small class="py-1 px-2 fw-bold fs-6 text-center">₹ 149</small>
+                <small
+                  class="text-primary py-1 px-2 fw-bold fs-6"
+                  style="float: right"
+                  ><a href="#">Enroll Now </a
+                  ></small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="course-item shadow">
+              <div class="position-relative overflow-hidden text-light image">
+                <img class="img-fluid" src="img/course-9.jpg" alt="" />
+                <div
+                  style="
+                    position: absolute;
+                    top: 15px;
+                    left: 16px;
+                    font-size: 12px;
+                    border-radius: 3px;
+                    background-color: #fb873f;
+                  "
+                  class="px-2 py-1 fw-bold text-uppercase"
+                >
+                  FREE
+                </div>
+              </div>
+              <div class="p-2 pb-0">
+                <h5 class="mb-1">Introduction to MS Excel</h5>
+              </div>
+              <div class="d-flex">
+                <small class="flex-fill text-center py-1 px-2"
+                  > 4.6</small
+                >
+                <small class="flex-fill text-center py-1 px-2"
+                  >4.2L+ Learners
+                </small>
+                <small class="flex-fill text-center py-1 px-2"
+                  >Beginner</small
+                >
+              </div>
+              <div class="d-flex">
+                <small class="flex-fill text-left p-2 px-2"
+                  >3.5 Hrs</small
+                >
+                <small class="py-1 px-2 fw-bold fs-6 text-center">₹ 0</small>
+                <small
+                  class="text-primary py-1 px-2 fw-bold fs-6"
+                  style="float: right"
+                  ><a href="#">Enroll Now </a
+                  ></small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="course-item shadow">
+              <div class="position-relative overflow-hidden text-light image">
+                <img class="img-fluid" src="img/course-10.jpg" alt="" />
+                <div
+                  style="
+                    position: absolute;
+                    top: 15px;
+                    left: 16px;
+                    font-size: 12px;
+                    border-radius: 3px;
+                    background-color: #0ed44c;
+                  "
+                  class="px-2 py-1 fw-bold text-uppercase"
+                >
+                  PAID
+                </div>
+              </div>
+              <div class="p-2 pb-0">
+                <h5 class="mb-1">Statistics For Data Science</h5>
+              </div>
+              <div class="d-flex">
+                <small class="flex-fill text-center py-1 px-1"
+                  > 4.55</small
+                >
+                <small class="flex-fill text-center py-1 px-1"
+                  >5.3L+ Learners
+                </small>
+                <small class="flex-fill text-center py-1 px-1"
+                  ><i class="fa fa-user me-2"></i>Intermediate</small
+                >
+              </div>
+              <div class="d-flex">
+                <small class="flex-fill text-left p-2 px-2"
+                  >2.5 Hrs</small
+                >
+                <small class="py-1 px-2 fw-bold fs-6 text-center">₹ 299</small>
+                <small
+                  class="text-primary py-1 px-2 fw-bold fs-6"
+                  style="float: right"
+                  ><a href="#">Enroll Now </a
+                  ></small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="course-item shadow">
+              <div class="position-relative overflow-hidden text-light image">
+                <img class="img-fluid" src="img/course-11.jpg" alt="" />
+                <div
+                  style="
+                    position: absolute;
+                    top: 15px;
+                    left: 16px;
+                    font-size: 12px;
+                    border-radius: 3px;
+                    background-color: #fb873f;
+                  "
+                  class="px-2 py-1 fw-bold text-uppercase"
+                >
+                  FREE
+                </div>
+              </div>
+              <div class="p-2 pb-0">
+                <h5 class="mb-1">Java Programming</h5>
+              </div>
+              <div class="d-flex">
+                <small class="flex-fill text-center py-1 px-2"
+                  > 4.45</small
+                >
+                <small class="flex-fill text-center py-1 px-2"
+                  >5L+ Learners
+                </small>
+                <small class="flex-fill text-center py-1 px-2"
+                  >Beginner</small
+                >
+              </div>
+              <div class="d-flex">
+                <small class="flex-fill text-left p-2 px-2"
+                  >2.0 Hrs</small
+                >
+                <small class="py-1 px-2 fw-bold fs-6 text-center">₹ 0</small>
+                <small
+                  class="text-primary py-1 px-2 fw-bold fs-6"
+                  style="float: right"
+                  ><a href="#">Enroll Now </a
+                  ></small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="course-item shadow">
+              <div class="position-relative overflow-hidden text-light image">
+                <img class="img-fluid" src="img/course-12.png" alt="" />
+                <div
+                  style="
+                    position: absolute;
+                    top: 15px;
+                    left: 16px;
+                    font-size: 12px;
+                    border-radius: 3px;
+                    background-color: #fb873f;
+                  "
+                  class="px-2 py-1 fw-bold text-uppercase"
+                >
+                  FREE
+                </div>
+              </div>
+              <div class="p-2 pb-0">
+                <h5 class="mb-1">C for Beginners</h5>
+              </div>
+              <div class="d-flex">
+                <small class="flex-fill text-center py-1 px-2"
+                  > 4.5</small
+                >
+                <small class="flex-fill text-center py-1 px-2"
+                  >1.1L+ Learners
+                </small>
+                <small class="flex-fill text-center py-1 px-2"
+                  >Beginner</small
+                >
+              </div>
+              <div class="d-flex">
+                <small class="flex-fill text-left p-2 px-2"
+                  >1.5 Hrs</small
+                >
+                <small class="py-1 px-2 fw-bold fs-6 text-center">₹ 0</small>
+                <small
+                  class="text-primary py-1 px-2 fw-bold fs-6"
+                  style="float: right"
+                  ><a href="#">Enroll Now </a
+                  ></small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    </div>
+    <!-- Courses End -->
+
+    <!-- Footer    @Vikash Kumar-->
+
+    <footer class="bg-dark text-light pt-5 pb-4 fw-medium">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+          <!-- About Section -->
+
+          <!-- @vishal singh logo -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <a
+              class="navbar-brand d-flex align-items-center px-5 px-lg-5"
+              href="index.html"
+            >
+              <img src="Img/nav icon/apple.png" alt="Logo" />
+              <p class="m-0 fw-bold" style="font-size: 35px">
+                Smart<span style="color: #fb873f">Ed</span>
+              </p></a
+            >
+            <br />
+            <p class="fw-medium">
+              Empowering learners worldwide with quality education resources and
+              tools for academic success.
+            </p>
+
+            <ul>
+              <li style="list-style: none">
+                <a href=""
+                  ><svg
+                    height="40px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      fill="#0288ed"
+                      d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+                    /></svg
+                ></a>
+                &nbsp;
+                <!-- instagram -->
+                <a href="#"></a>
+                  <svg 
+                  height="40px"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z"
+                    /></svg
+                > &nbsp;</a>
+                <a href="#linkedin">
+                  <svg 
+                  height="40px"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#115192" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Links -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
+              Quick Links
+            </h5>
+            <p>
+              <a
+                href="index.html"
+                class="text-light"
+                style="text-decoration: none"
+                >Home</a
+              >
+            </p>
+            <p>
+              <a
+                href="Courses.html
+              "
+                class="text-light"
+                style="text-decoration: none"
+                >Courses</a
+              >
+            </p>
+            <p>
+              <a
+                href="About_Us.html"
+                class="text-light"
+                style="text-decoration: none"
+                >About Us</a
+              >
+            </p>
+            <p>
+              <a
+                href="Contact.html"
+                class="text-light"
+                style="text-decoration: none"
+                >Contact</a
+              >
+            </p>
+          </div>
+
+          <!-- Services -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
+              Services
+            </h5>
+            <p>
+              <a href="#" class="text-light" style="text-decoration: none"
+                >Tutoring</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-light" style="text-decoration: none"
+                >Study Materials</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-light" style="text-decoration: none"
+                >Webinars</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-light" style="text-decoration: none"
+                >Certification</a
+              >
+            </p>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
+              Contact
+            </h5>
+            <p>
+              <svg
+                height="40px"
+                width="20px"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 576 512"
+              >
+                <!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  fill="#FFD43B"
+                  d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
+                />
+              </svg>
+              &nbsp; Patliputra Industrial Area Patna-13
+            </p>
+            <p>
+              <svg
+                height="40px"
+                width="20px"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  fill="#FFD43B"
+                  d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                />
+              </svg>
+              &nbsp; support@SmartEd.com
+            </p>
+            <p>
+              <svg
+                height="40px"
+                width="20px"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  fill="#FFD43B"
+                  d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
+                />
+              </svg>
+              &nbsp; +91 70000 80000
+            </p>
+          </div>
+        </div>
+
+        <hr class="mb-4" />
+
+        <div class="row ms-5">
+          <div>
+            <p>Copyright &copy;2024 SmartEd All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer End -->
+  </body>
+
+  <!-- Bootsrap -Script -->
+
+  <script src="js/main.js"></script>
+  <script src="bootstrap/bootstrap.bundle.min.js"></script>
+</html>

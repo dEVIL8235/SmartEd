@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            overflow-x: hidden;
+        }
+        .banner {
+            background: url('img/Adv\ Machine.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 150px 20px;
+        }
+        .banner h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+        .banner p {
+            font-size: 1.2rem;
+        }
+        .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .btn-enroll {
+            background-color: #007bff;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .btn-enroll:hover {
+            background-color: #0056b3;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .rating-stars {
+            color: #f4b400;
+            font-size: 1.2rem;
+        }
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .bg-accent {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <!-- Banner Section -->
+    <section class="banner" ><div style="text-shadow: 2px 2px #000000;">
+        <h1>Advanced Machine Learning</h1>
+        <p>Instructor: Jyesh jii</p>
+    </div>
+    </section>
+    <!-- Course Description and Enroll Button -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="section-title">Course Description & Objectives</h2>
+                <p>
+                    Learn to build modern, responsive websites and full-stack applications from scratch! This course covers front-end, back-end, and database integration.
+                    By the end of this program, you will have the skills to create professional web applications.
+                </p>
+           
+                <ul>
+                    <li>Understand the principles of modern web development</li>
+                    <li>Create responsive designs with advanced CSS and Bootstrap</li>
+                    <li>Develop server-side applications with Node.js</li>
+                    <li>Work with databases like MongoDB</li>
+                </ul>
+              <a href="#enroll" class="btn-enroll d-inline-block mt-4 p-2 border rounded-4">Enroll Now</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Syllabus and Topics Covered -->
+    <section class="bg-accent py-5">
+        <div class="container">
+            <h2 class="section-title">Syllabus & Topics Covered</h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Introduction to Full-Stack Development</li>
+                <li class="list-group-item">HTML, CSS, and JavaScript Basics</li>
+                <li class="list-group-item">Responsive Web Design with Bootstrap</li>
+                <li class="list-group-item">Backend Development with Node.js</li>
+                <li class="list-group-item">Database Management with MongoDB</li>
+                <li class="list-group-item">Deploying Applications to the Cloud</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Instructor Profile -->
+    <section class="container my-5">
+        <h2 class="section-title">Instructor Profile</h2>
+        <div class="row align-items-center">
+            <div class="col-md-3 text-center">
+                <img src="img/user-image.jpg" alt="Instructor" class="profile-img">
+            </div>
+            <div class="col-md-9">
+                <h3>Jyesh Jii</h3>
+                <p>
+                    Jyesh is a seasoned full-stack developer with over 15 years of experience in the tech industry. 
+                    She has worked with top companies and is passionate about teaching others to excel in web development.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews and Ratings -->
+    <section class="bg-accent py-5">
+        <div class="container">
+            <h2 class="section-title">Reviews & Ratings</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">John Smith</h5>
+                            <div class="rating-stars">★★★★★</div>
+                            <p class="card-text">"This course is outstanding! The instructor is very knowledgeable."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Emily Brown</h5>
+                            <div class="rating-stars">★★★★☆</div>
+                            <p class="card-text">"Loved the hands-on projects! A must-take course for developers."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Michael Lee</h5>
+                            <div class="rating-stars">★★★★☆</div>
+                            <p class="card-text">"Well-structured and easy to follow. Highly recommend!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2024 Web Development Academy. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
